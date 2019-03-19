@@ -19,11 +19,11 @@ More Info: https://github.com/paulirish/html5-boilerplate/blob/362d0b7/css/style
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;overflow-y:scroll}
 a:link{-webkit-tap-highlight-color:#FF5E99}
 a:hover,a:active{outline:none}
-a,a:active,a:visited{color:#607890}
-a:hover{color:#036}
+a,a:active,a:visited{color:#ccc;}
+a:hover{color:#333;}
 ul,ol{margin-left:2em}
 ol{list-style-type:decimal}
-nav ul,nav li{list-style:none;list-style-image:none;margin:0}
+ul,li{list-style:none;list-style-image:none;margin:0}
 small{font-size:85%}
 b,strong,th{font-weight:700}
 td{vertical-align:top}
@@ -110,40 +110,3 @@ label {}
   h2, h3{ page-break-after: avoid; }
 }
  
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-    /* Styles */
- 
-}
- 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px)
-and (max-width : 480px) {
-    /* Styles */
- 
-}
- 
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-width : 481px)
-and (max-width : 768px) {
-    /* Styles */
- 
-}
- 
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-width : 769px) 
-and (max-width : 1024px) {
-    /* Styles */
- 
-}
- 
-/* Larger screens ----------- */
-@media only screen 
-and (min-width : 1024px) {
-    /* Styles */
- 
-}

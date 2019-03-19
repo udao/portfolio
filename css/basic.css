@@ -1,1 +1,57 @@
-basic.css
+/* main */
+.col-2, .col-10 {padding:0;}
+.header {font-family: 'Roboto', sans-serif;}
+.header .container {justify-content: space-between;}
+.header h1 {padding-left:20px;}
+.header .logo {font-weight:bold; font-size:2em; color:#333; text-decoration:none;}
+.nav {text-align:right;}
+.nav li a {font-weight:200;}
+.contents .col-sm-6, .contents .col-lg-3 {padding-right:4px; padding-left:4px;}
+.contents .items {margin:4px 0;}
+.copy {font-size:0.85em; color:#ccc; text-align:center;}
+.hamburger {float:right; font-size:1.5em; color:#333; margin-right:20px; padding:10px;}
+
+/* resume */
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    /* Styles */
+	.nav {display: none;}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px)
+and (max-width : 480px) {
+    /* Styles */
+	.nav {display: none;}
+ 
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-width : 481px)
+and (max-width : 768px) {
+    /* Styles */
+	.nav {display: none;}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-width : 769px) 
+and (max-width : 1024px) {
+    /* Styles */
+	.hamburger {display:none;}
+}
+ 
+/* Larger screens ----------- */
+@media only screen 
+and (min-width : 1024px) {
+    /* Styles */
+	.hamburger {display:none;}
+ 
+}
