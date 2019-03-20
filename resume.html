@@ -11,6 +11,8 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- jquery cdn -->
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<!-- css -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/basic.css">
@@ -24,7 +26,7 @@
 				<div class="col-2 py-1">
 					<h1><a href="#" class="col-2 logo">UDAO</a></h1>
 				</div>
-				<div class="col-10">
+				<div class="col-10 py-1">
 					<ul class="nav justify-content-end">
 						<li class="nav-item">
 							<a class="nav-link active" href="./index.html">PORTFOLIO</a>
@@ -36,16 +38,49 @@
 							<a class="nav-link" href="#">CONTACT</a>
 						</li>
 					</ul>
-					<div class="hamburger py-1">
+					<div class="hamburger py-1" id="dropdown">
 						<i class="fas fa-bars"></i>
-					</div>
+					</div>	
+				</div>
+				<div class="menu" id="menu-list">
+					<ul>
+						<li><a href="./index.html">PORTFOLIO</a></li>
+						<li><a href="./resume.html">RESUME</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="contents">
-		<div class="container-fluid">
-			dfdf
+		<div class="achieve">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-4">
+						<span>1.padding</span>
+						<div class="button">click</div>
+					</div>
+					<div class="col-4">
+						<span>2.div > p태그</span>
+						<div class="button2"><p>click</p></div>
+					</div>
+					<div class="col-4">
+						<span>3.button > P태그</span>
+						<button class="button3"><p>click</p></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<span>4.line-height</span>
+						<div class="button4"><p>click</p></div>
+					</div>
+					<div class="col-4">
+						<span>5.table-cell</span>
+						<div class="button5"><p>click</p></div>
+					</div>
+
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
@@ -56,7 +91,13 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
+	<script>
+		$(document).ready(function(){
+			$("#dropdown").click(function(){
+				$("#menu-list").fadeToggle();
+			})
+		});
+	</script>
 </body>
 </html>
